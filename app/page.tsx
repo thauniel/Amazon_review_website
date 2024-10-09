@@ -112,7 +112,7 @@ const EcComponents: React.FC<EcComponentsProps> = () => {
           setSelectedProduct('');  // Reset selected product when genre changes
         }}>
           <SelectTrigger className="border rounded-md py-2 px-4 ">
-            <SelectValue placeholder="product genre" />
+            <SelectValue placeholder="Category" />
           </SelectTrigger>
         <SelectContent>
             {productGenres.map((genre, index) => (
@@ -122,7 +122,7 @@ const EcComponents: React.FC<EcComponentsProps> = () => {
       </Select>
       <Select value={selectedProduct} onValueChange={setSelectedProduct}>
           <SelectTrigger className="border rounded-md py-2 px-4 ">
-            <SelectValue placeholder="product name" />
+            <SelectValue placeholder="Product" />
           </SelectTrigger>
         <SelectContent>
             {(productData[selectedGenre] || []).map((name, index) => (
