@@ -219,7 +219,7 @@ const EcComponents: React.FC<EcComponentsProps> = () => {
 
             <Badge className="rounded-full py-2 px-4" 
               variant="secondary"
-              title='positive:11 negative:9'
+              title='positive:0 negative:0'
                 onClick={() => {
                 BadgeClick('noise mode');
                 handleBadgeClick(noise_p_review.reviews,noise_p_review.reference)
